@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/207ef960a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="mainContainer">
+
+    <!-- form -->
+    <div class="fromSection">
+        <div class="formHeading">
+            <h2>Quiz Form</h2>
+            <p>Fill The Form</p>
+        </div>
+        <div class="name">
+            <input type="text" id="userName" placeholder="Enter your name plz...">
+            <small id="nameError"></small>
+        </div>
+        <div class="Email">
+            <input type="text" id="userEmail" placeholder="Enter your Email plz...">
+            <small id="emailError"></small>
+        </div>
+        <button class="submitbtn" onclick="onSubmit()">SUBMIT</button>
+    </div>
+    <!-- startbtn -->
+    <div class="quizbtn hide" >
+        <h1 class="qu">Quiz!</h1>
+        <button class="btn" id="startBtn" >START</button>
+    </div>
+    <!-- quiz -->
+    <div class="quiz hide">
+        <div class="userInfo">
+            <div class="userName">
+                <p id="setUsername">Yousra  </p>
+                <p id="setEmail"> yousraarif1354@gmail.com </p>
+
+            </div>
+            <div class="timer">
+            <p>1:00</p>
+            </div>
+        </div>
+
+         <div class="quizQuestion " id="quizbox">
+        <h2 id="quizQues"></h2>
+        
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+    </div>
+    <div class="quizFooter">
+        <div id="quesNum">
+             1 to 5
+        </div>
+        <div class="nextQues">
+        <button onclick="nextques()" id="nextQuestion" class="">Next</button>
+    </div>
+    </div>
+
+
+</div>
+</body>
+<script src="app.js"></script>
+</html>

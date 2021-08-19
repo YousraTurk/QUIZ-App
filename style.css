@@ -1,0 +1,345 @@
+:root{
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+    /* background-color: #ecf5ff; */
+    font-size: 62.5%;
+
+}
+.fromSection{
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+text-align: center;
+justify-content: center;
+max-width: 80rem;
+margin-top: -1rem;
+width: 50vw;
+height:25vw;
+max-width: 80rem;
+}
+.formHeading{
+    padding: 0.5rem 0;
+    margin-top: -10rem;
+}
+.formHeading p{
+    color: #56a5eb;
+    font-size: 3rem;
+    margin-top: 2rem;
+    line-height: 5rem;
+
+
+}
+.formHeading h2{
+    color: #56a5eb;
+    line-height: 5rem;
+    margin-top: -4rem;
+    font-size: 4rem;
+
+}
+.name{
+    margin-top: 5rem;
+    line-height: 3rem;
+
+}
+.name input {
+    width: 50%;
+    height: 3rem;
+    display: block;
+    outline: none;
+    border: none;
+    padding: .8rem;
+    border-bottom: .2rem solid #56a5eb;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+
+}
+.name input:hover{
+    font-family: cursive;
+}
+.Email input{
+    width: 50%;
+    margin: 0 auto;
+    height: 3rem;
+    display: block;
+    outline: none;
+    border: none;
+    padding: .8rem;
+    border-bottom: .2rem solid #56a5eb;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Email input:hover{
+    font-family: cursive;
+}
+.fromSection div small{
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: .4rem;
+    color: red;
+    font-size: small;
+}
+.fromSection.hide{
+    display: none;
+}
+.submitbtn{
+    background-color:#ecf5ff ;
+    display: block;
+    margin-left: 39rem;
+    text-decoration: none;
+    width: 12rem;
+    height: 4rem;
+    color: #56a5eb;
+    font-size: large;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: .2rem solid #56a5eb;
+    /* border: none; */
+    cursor: pointer;
+    
+}
+.quizbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quizbtn.hide{
+    display: none;
+}
+.quiz.hide{
+    display: none;
+}
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 1rem 1rem .5rem 0rem rgba(0,0,0,0.75);
+-webkit-box-shadow: 1rem 1rem .5rem 0rem rgba(0,0,0,0.75);
+-moz-box-shadow: 1rem 1rem .5rem 0rem rgba(0,0,0,0.75);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+h1{
+    font-size: 5.4rem;
+    color: #56a5eb;
+    margin-bottom: 5rem;
+}
+h1 >span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+    color: #56a5eb;
+    line-height: 10rem;
+
+}
+ .option{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    padding: 1.5rem 2.5rem;
+    color: #56a5eb;
+    padding: 1.5rem;
+list-style: none;
+} 
+.userInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+    background-color: #56a5eb;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: .8rem .8rem 0 0 ;
+}
+.userName p {
+    font-size: 2rem;
+}
+.timer p{
+    font-size: 2rem;
+}
+
+.option:hover{
+    cursor: pointer;
+    box-shadow: 1rem 1rem .5rem 0rem rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1rem 1rem .5rem 0rem rgba(0,0,0,0.75);
+    -moz-box-shadow: 1rem 1rem 1rem 0rem rgba(0,0,0,0.75);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+        /* background-color: #56a5eb; */
+        /* color: white; */
+        border: 0.1rem solid #56a5eb;
+
+    
+}
+.quizFooter{
+    width: 100%;
+    background-color: #56a5eb;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.quizFooter button{
+    width: 12rem;
+    height: 4rem;
+    /* margin-top: 10px ; */
+    /* margin-bottom: 10px ; */
+    background-color: #56a5eb;
+    color: white;
+    font-size: medium;
+    padding: .3rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+#quesNum{
+    color:white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+.correct{
+    background-color: green;
+    color: white;
+}
+.wrong{
+    background-color: red;
+    color: white;
+
+}
+.disabled{
+    pointer-events: none;
+}
+.quizFooter button{
+    width: 12rem;
+    height: 4rem;
+    background-color: #56a5eb;
+    color: white;
+    font-size: medium;
+    padding: .3rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+#quesNum{
+    color:white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.score{
+    margin: 0 auto;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+text-align: center;
+justify-content: center;
+max-width: 80rem;
+margin-top: 5rem;
+width: 50vw;
+height:25vw;
+max-width: 80rem;
+}
+
+.score p {
+    color:#56a5eb ;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.score i{
+    font-size: 20rem;
+    margin-top: 4rem;
+    color:#56a5eb ;
+}
+.name{
+line-height: 5rem;}
+.points p{
+    margin-top: 5rem;
+    font-size: 4rem;
+font-weight: bold;}
+.resetBtn{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: 1rem .5rem;
+    min-height: 4rem;
+    /* position: absolute; */
+    min-width: 12rem; 
+    margin-top: 9rem ;
+}
+.resetBtn button{
+    min-width: 12rem; 
+    min-height: 4rem;
+    margin-bottom: 1rem ;
+    background-color: #56a5eb;
+    color: white;
+    font-size: large;
+    padding: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width:998px) {
+    html{
+        font-size: 55%;
+    }
+    .resetBtn{
+        margin-top: 15rem;
+    }
+
+}
+@media (min-width:768px) {
+    html{
+        font-size: 45%;
+
+    }
+}
